@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App5.ScrollPage" BackgroundColor="Black">
+
+    <StackLayout>
+        <!-- reproductor y barra de progreso, pendiente aun -->
+        <Frame BackgroundColor="Gray" HeightRequest="200">
+            
+        </Frame>
+
+        <ProgressBar x:Name="videoProgressBar" Progress="0" HeightRequest="10" BackgroundColor="Black" ProgressColor="Blue"/>
+
+        <StackLayout Orientation="Horizontal" Padding="10,5" BackgroundColor="White">
+            <!-- botones de abajo, forma horizontal -->
+            <Button Text="Home" ImageSource="home_icon.png"/>
+            <Button Text="Explore" ImageSource="explore_icon.png"/>
+            <Button Text="Profile" ImageSource="profile_icon.png"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Padding="10,0" BackgroundColor="White">
+            <!-- Boton "See References" -->
+            <Button Text="See References" ImageSource="references_icon.png"/>
+
+            <!-- Informacion del usuario y titulo del video -->
+            <Image Source="user_profile_image.png" HeightRequest="30" WidthRequest="30" Margin="10,0"/>
+            <StackLayout>
+                <Label Text="Nombre del Usuario" FontSize="Small"/>
+                <Label Text="Título del Video" FontSize="Small"/>
+            </StackLayout>
+        </StackLayout>
+
+        <!-- Botones de interaccion en la parte derecha, backend pendiente -->
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand" BackgroundColor="White">
+            <Button ImageSource="like_icon.png"/>
+            <Button ImageSource="comment_icon.png"/>
+            <Button ImageSource="share_icon.png"/>
+            <Button ImageSource="more_options_icon.png"/>
+        </StackLayout>
+
+        <!-- Cantidad de likes, comentarios y veces compartidas, backend pendiente -->
+        <StackLayout Orientation="Horizontal" Padding="10,5" BackgroundColor="White">
+            <Label Text="Likes: 100" FontSize="Small" VerticalOptions="Center"/>
+            <Label Text="Comments: 50" FontSize="Small" VerticalOptions="Center" Margin="10,0"/>
+            <Label Text="Shares: 20" FontSize="Small" VerticalOptions="Center"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App5.Login" BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="20">
+            <Image Source="logo.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="0,0,0,0" WidthRequest="200"/>
+
+            <Label Text="Login" FontSize="Title" HorizontalOptions="CenterAndExpand" TextColor="Black"/>
+
+            
+                <Entry Placeholder="Username" PlaceholderColor="#AAAAAA"/>
+            <BoxView HeightRequest="1" Color="#AAAAAA" HorizontalOptions="FillAndExpand" Margin="0,-14.3,0,0"/>
+            
+
+            
+                <Entry Placeholder="Password" IsPassword="True" PlaceholderColor="#AAAAAA"/>
+            <BoxView HeightRequest="1" Color="#AAAAAA" HorizontalOptions="FillAndExpand" Margin="0,-14.3,0,0"/>
+            
+
+            <Label Text="Don't have an account? Sign up." HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" TextColor="Black"/>
+            <Button Text="Login" Clicked="OnLoginButtonClicked" BackgroundColor="#02A5C5" TextColor="White" CornerRadius="10" Margin="0,30,0,0"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="0,20,0,0">
+                <BoxView HeightRequest="1" Color="#AAAAAA" HorizontalOptions="FillAndExpand" Margin="0,32,0,0"/>
+                <Label Text="or" FontSize="25" TextColor="Black" HorizontalOptions="CenterAndExpand" Padding="1,0"/>
+                <BoxView HeightRequest="1" Color="#AAAAAA" HorizontalOptions="FillAndExpand" Margin="0,32,0,0"/>
+            </StackLayout>
+            <Label Text="Login with" FontSize="15" TextColor="Black" HorizontalOptions="CenterAndExpand" Padding="1,0"/>
+
+
+
+
+
+            <ContentView Padding="0" HorizontalOptions="CenterAndExpand" Margin="0,10,0,0">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <ImageButton Source="facebook_logo.png" HeightRequest="20" WidthRequest="20" BackgroundColor="Transparent" Clicked="OnFacebookButtonClicked"/>
+                    <Label Text="Facebook Account" TextColor="#02A5C5"/>
+                </StackLayout>
+            </ContentView>
+
+            <ContentView Padding="0" HorizontalOptions="CenterAndExpand" Margin="0,5,0,0">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <ImageButton Source="google_logo.png" HeightRequest="20" WidthRequest="20" BackgroundColor="Transparent" Clicked="OnGoogleButtonClicked"/>
+                    <Label Text="Google Account" TextColor="#02A5C5"/>
+                </StackLayout>
+            </ContentView>
+
+
+
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
